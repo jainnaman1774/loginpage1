@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login_signup.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <script src="login.js"></script>
+</head>
+<body>
+    <div class="signup-box">
+        <form class="form" onsubmit="return registerUser(event);">
+           <h2 class="form-title">Signup</h2>
+            <input class="input" type="text" id="full_name" placeholder="Full Name" />
+            <input class="input" type="email" id="email" placeholder="Email" />
+            <input class="input" type="password" id="password" placeholder="Password" />
+            <input class="input" type="password" id="confirm_password" placeholder="Confirm Password" />
+            <input type="submit" class="btn" value="Signup">
+        </form>
+        <p class="footer">
+            I already have an Account
+            <a href="login.html" style="color: #213cc1; font-weight: bold;">Login instead</a>
+        </p>
+    </div>
+</html>

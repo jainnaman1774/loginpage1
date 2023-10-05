@@ -1,0 +1,126 @@
+* {
+  position: relative;
+  transition: all 0.2s;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: url(back.jpg);
+  background-size: cover;
+}
+.container {
+  max-width: 1440px;
+  padding: 0 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.signup-box,
+.login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0;
+  margin-bottom: 20px;
+  background: none;
+  /* border: 2px solid black; */
+}
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 50px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, .4);
+  /* border: 2px solid black; */
+}
+.form-title {
+  color: white;
+  font-size: 30px;
+}
+
+.logo img {
+  width: 170px;
+  height: 80px;
+}
+
+.input {
+  height: 30px;
+  width: 300px;
+  font-size: 15px;
+  margin: 0px 0 20px 0;
+  border: 3px solid blue;
+  background-color: transparent;
+  outline: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 40px;
+}
+.btn {
+  width: 150px;
+  font-family: cursive;
+  font-size: 20px;
+  color: white;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid blue;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+.forgot-box {
+  width: 100%;
+  height: 20px;
+  /* border: 1px solid red; */
+}
+.forgot {
+  position: absolute;
+  right: 0px;
+  color: blue;
+}
+.btn:hover {
+  background-color: #213cc1;
+  box-shadow: 2px #213cc1;
+}
+.btn:active {
+  transform: scale(0.9);
+}
+.footer {
+  color: white;
+}
+
+
+/* ---------------------------------- Loader --------------------------------------- */
+
+.ring {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 0px solid #000;
+  position: absolute;
+}
+.ring:nth-child(1) {
+  border-bottom-width: 8px;
+  border-color: rgb(255, 255, 255);
+  animation: rotate 2s linear infinite;
+}
+
+@media screen and (max-width: 1280px) {
+  .form {
+    padding: 30px;
+    border-radius: 8px;
+    /* border: 2px solid black; */
+  }
+
+  .input {
+    height: 30px;
+    width: 350px;
+  }
+  .btn {
+    width: 200px;
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+}
